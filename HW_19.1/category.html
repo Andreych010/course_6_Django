@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<style>
+    .block {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 800px;
+        background-color: gray;
+        color: white;
+        border: 1px solid darkblue;
+        text-align: right;
+        padding-bottom: 40px;
+    }
+
+    .btn-cont {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-2">
+            <div class="block">
+                <div class="card-body text-white">
+                    <p class="title bi-bootstrap-fill"> Меню</p>
+                    <a href='/?page=Главная' type="button"
+                       class="btn text-white btn-outline-primary form-control bi-house-door"> Главная</a>
+                    <a href='/?page=Каталог' type="button"
+                       class="btn text-white btn-outline-primary form-control bi-speedometer"> Каталог</a>
+                    <a href='/?page=Категории' type="button"
+                       class="btn text-white btn-outline-primary form-control bi-grid-3x3-gap">
+                        Категории</a>
+                    <a href='/?page=Контакты' type="button"
+                       class="btn text-white btn-outline-primary form-control bi-person-lines-fill"> Контакты</a>
+                    <div class="btn-cont">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle " href="#" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">Пользователь</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                <li><a class="dropdown-item" href="#">Выход</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="title">Категория ноутбуки</h2>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-center">
+                           <img src="https://uima.ru/upload/iblock/488/m6cplsm3v0f7pof9m5x049znwwi4im4m.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">141 715 ₽</h5>
+                                <p class="card-text">Ноутбук Asus FX506HCB-HN144 15.6/IPS/FHD/ Intel i5-11400H/8Gb/512Gb
+                                    SSD/RTX 3050 4Gb/no OS </p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_asus_fx506hcb_hn144_15_6_ips_fhd_intel_i5_11400h_8gb_512gb_ssd_rtx_3050_4gb_no_os/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <img src="https://uima.ru/upload/iblock/797/vd7c4q4g344zco21qgasg90a9po4rmex.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">53 985 ₽</h5>
+                                <p class="card-text">Ноутбук HP 17-cp0039ur 17.3/IPS/FHD/ AMD Ryzen 3 5300U/8GB/256GB
+                                    SSD/AMD Radeon Vega 6/DOS/Black</p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_hp_17_cp0039ur_17_3_ips_fhd_amd_ryzen_3_5300u_8gb_256gb_ssd_amd_radeon_vega_6_dos_black/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <img src="https://uima.ru/upload/iblock/053/9ws3xbo9gy0f3z9iyuzfyg4tvz9q9ymo.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">115 385 ₽</h5>
+                                <p class="card-text">Ноутбук Asus TUF Gaming FA507RC-HN006 15.6/IPS/FHD 144Hz/
+                                    R7-6800H/16GB/512GB SSD/No OS</p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_asus_tuf_gaming_fa507rc_hn006_15_6_ips_fhd_144hz_r7_6800h_16gb_512gb_ssd_no_os/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <img src="https://uima.ru/upload/iblock/bc8/r34v3h7h3j1jgzp7j4y7vjtq5zw1nl13.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">125 655 ₽</h5>
+                                <p class="card-text">Ноутбук ASUS TUF Gaming FA507RE 15.6/IPS 144Hz/FHD/ AMD Ryzen 7
+                                    6800HS/16GB/512GB SSD/NVIDIA GeForce RTX 3050 Ti 4GB/DOS</p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_asus_tuf_gaming_fa507re_15_6_ips_144hz_fhd_amd_ryzen_7_6800hs_16gb_512gb_ssd_nvidia_geforce/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <img src="https://uima.ru/upload/iblock/447/7pcofzq5jcqty1jgxv3z0h2qazzj9l4j.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">79 185 ₽</h5>
+                                <p class="card-text">Ноутбук Asus M1503QA 15.6/OLED/FHD/ AMD R7-5800H/8GB/512GB
+                                    SSD/Windows 11/Quiet Blue</p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_asus_m1503qa_15_6_oled_fhd_amd_r7_5800h_8gb_512gb_ssd_windows_11_quiet_blue/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <img src="https://uima.ru/upload/iblock/488/m6cplsm3v0f7pof9m5x049znwwi4im4m.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">215 025 ₽</h5>
+                                <p class="card-text">Ноутбук Asus FX706HE 17.3/IPS/FHD/ Intel
+                                    i5-11400H/16Gb/SSD512Gb/RTX 3050 Ti 4Gb/noOS</p>
+                                <a href="https://uima.ru/noutbuki/noutbuk_asus_fx706he_17_3_ips_fhd_intel_i5_11400h_16gb_ssd512gb_rtx_3050_ti_4gb_noos/"
+                                   class="btn btn-primary">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
