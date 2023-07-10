@@ -15,7 +15,7 @@ class MyServer(BaseHTTPRequestHandler):
         if page_address == 'Главная':
             with open('main_page.html') as f:
                 return f.read()
-        if page_address == 'Каталог':
+        elif page_address == 'Каталог':
             with open('Catalog.html') as f:
                 return f.read()
         elif page_address == 'Категории':
