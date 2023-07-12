@@ -8,21 +8,21 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
 
     def __get_index(self):
-        with open('main_page.html') as f:
+        with open('html_files/main_page.html', encoding='utf-8') as f:
             return f.read()
 
     def __get_article_content(self, page_address):
         if page_address == 'Главная':
-            with open('main_page.html') as f:
+            with open('html_files/main_page.html', 'r', encoding='utf-8') as f:
                 return f.read()
         elif page_address == 'Каталог':
-            with open('Catalog.html') as f:
+            with open('html_files/Catalog.html', 'r', encoding='utf-8') as f:
                 return f.read()
         elif page_address == 'Категории':
-            with open('category.html') as f:
+            with open('html_files/category.html', 'r', encoding='utf-8') as f:
                 return f.read()
         elif page_address == 'Контакты':
-            with open('contacts.html') as f:
+            with open('html_files/contacts.html', 'r', encoding='utf-8') as f:
                 return f.read()
         return 'Article not found!'
 
